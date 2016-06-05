@@ -381,7 +381,7 @@ namespace CodeGenerator
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        /// {0}", obj.Description);
                     content.Append(Environment.NewLine);
-                    content.Append("        /// <summary>");
+                    content.Append("        /// </summary>");
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        private {0} _{1} {2}", DBTypeToCSharpType(obj.Type, obj.AllowNull, supportNullType), obj.Name, " { get; set; }");
                     content.Append(Environment.NewLine);
@@ -391,7 +391,7 @@ namespace CodeGenerator
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        /// {0}", obj.Description);
                     content.Append(Environment.NewLine);
-                    content.Append("        /// <summary>");
+                    content.Append("        /// </summary>");
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        public {0} {1}", DBTypeToCSharpType(obj.Type, obj.AllowNull, supportNullType), obj.Name);
                     content.Append(Environment.NewLine);
@@ -411,7 +411,7 @@ namespace CodeGenerator
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        /// {0}", obj.Description);
                     content.Append(Environment.NewLine);
-                    content.Append("        /// <summary>");
+                    content.Append("        /// </summary>");
                     content.Append(Environment.NewLine);
                     content.AppendFormat("        public {0} {1} {2}", DBTypeToCSharpType(obj.Type, obj.AllowNull, supportNullType), obj.Name, " { get; set; }");
                     content.Append(Environment.NewLine);
